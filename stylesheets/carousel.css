@@ -1,0 +1,91 @@
+body {
+  color: #5a5a5a;
+}
+
+html,body{
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+/* POSITIONING */
+.carousel,.carousel-inner,.item,.active{
+  height:100%;
+}
+
+.carousel-control{
+  top:100%;
+  margin-top: -60px;
+}
+.carousel-indicators{
+  top: 100%;
+  margin-top: -40px;
+  right: 80px;
+}
+
+/* LAYOUT */
+
+.photo-credit{
+  height: 70px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #333;
+  background: rgba(0,0,0,0.75);
+}
+.photo-credit p,.carousel-page p{
+  padding: 20px 180px 0 80px;
+}
+
+.carousel .item {
+  -webkit-transition: opacity 2s ease-in-out;
+  -moz-transition: opacity 2s ease-in-out;
+  -ms-transition: opacity 2s ease-in-out;
+  -o-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+}
+.carousel .active.left,
+.carousel .active.right {
+  left: 0;
+  z-index: 2;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.carousel .next,
+.carousel .prev {
+  left: 0;
+  z-index: 1;
+}
+
+.carousel-caption p,.carousel-caption h4{
+  width:100%;
+  margin-left: 75px;
+}
+.carousel-caption .btnbar{
+ text-align:center; 
+ padding: 20px;
+}
+a.btn{
+  min-width: 140px;
+  display:inline-block;
+  margin: 0px auto;
+}
+
+img {
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  img {
+    left: 50%;
+    margin-left: -512px; 
+    overflow:hidden;
+  }
+}

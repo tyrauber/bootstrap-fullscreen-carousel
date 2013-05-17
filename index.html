@@ -1,74 +1,99 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Bootstrap-fullscreen-carousel : Fullscreen bootstrap carousel that fills the screen and maintains the image aspect ratio." />
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Bootstrap-fullscreen-carousel</title>
+    <meta charset="utf-8">
+    <title>Carousel Template &middot; Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+      <link href="stylesheets/bootstrap.min.css" rel="stylesheet" media="screen">
+      <link href="stylesheets/carousel.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
   </head>
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">View on GitHub</a>
-
-          <h1 id="project_title">Bootstrap-fullscreen-carousel</h1>
-          <h2 id="project_tagline">Fullscreen bootstrap carousel that fills the screen and maintains the image aspect ratio.</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/tyrauber/bootstrap-fullscreen-carousel/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/tyrauber/bootstrap-fullscreen-carousel/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+    <!-- Carousel -->
+      <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>  
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="images/Crater_Lake__Winter_by_MarcAdamus.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h4><a href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">Fullscreen Bootstrap Carousel</a></h4>
+                <p>Photo Credit: <a href="http://marcadamus.deviantart.com/art/Crater-Lake-Winter-58616472">Crater Lake, Winter by Marc Adamus</a><br/>Development Credit: <a href="http://twitter.github.io/bootstrap">Twitter</a> & <a href="http://tyrauber.github.io">Me</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/Lost_Paradise_by_Gwarf.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h4><a href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">Fullscreen Bootstrap Carousel</a></h4>
+                <p> Photo Credit: <a href="http://gwarf.deviantart.com/art/Lost-Paradise-31963771?moodonly=1&loggedin=1">Lost Paradise, by Gwarf</a><br/>Development Credit: <a href="http://twitter.github.io/bootstrap">Twitter</a> & <a href="http://tyrauber.github.io">Me</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/Room_With_A_View_by_Nzeman.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h4><a href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">Fullscreen Bootstrap Carousel</a></h4>
+                <p> Photo Credit: <a href="http://nate-zeman.deviantart.com/art/Room-With-A-View-112815425">Room With a View, by Nate Zeman</a><br/>Development Credit: <a href="http://twitter.github.io/bootstrap">Twitter</a> & <a href="http://tyrauber.github.io">Me</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/snow_paradise_by_mareika.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h4><a href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">Fullscreen Bootstrap Carousel</a></h4>
+                <p> Photo Credit: <a href="http://mareika.deviantart.com/art/snow-paradise-105864844">Snow Paradise by Marieka</a><br/>Development Credit: <a href="http://twitter.github.io/bootstrap">Twitter</a> & <a href="http://tyrauber.github.io">Me</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/Entrance_to_Paradise_by_AntiSpy.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h4><a href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">Fullscreen Bootstrap Carousel</a></h4>
+                <p> Photo Credit: <a href="http://antispy.deviantart.com/art/Entrance-to-Paradise-30028168">Entrance to Paradise, by AntiSpy</a><br/>Development Credit: <a href="http://twitter.github.io/bootstrap">Twitter</a> & <a href="http://tyrauber.github.io">Me</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <img src="images/Evening_at_Rydal_Water_by_scotto.jpg" alt="">
+            <div class="container">
+              <div class="carousel-caption">
+                <h4><a href="https://github.com/tyrauber/bootstrap-fullscreen-carousel">Fullscreen Bootstrap Carousel</a></h4>
+                <p> Photo Credit: <a href="http://scotto.deviantart.com/art/Lake-District-Evening-at-Rydal-Water-53339985">Evening at Rydal Water, by Scotto</a><br/>Development Credit: <a href="http://twitter.github.io/bootstrap">Twitter</a> & <a href="http://tyrauber.github.io">Me</a></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div>
     </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Bootstrap-fullscreen-carousel maintained by <a href="https://github.com/tyrauber">tyrauber</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
+    <script src="javascripts/jquery-1.9.1.min.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script> 
+      !function ($) { 
+        $(function(){
+            $('#myCarousel').carousel()
+        })
+      }(window.jQuery) 
+    </script>
   </body>
 </html>
